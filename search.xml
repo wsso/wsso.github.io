@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>first-blog</title>
+    <url>/101.html</url>
+    <content><![CDATA[<h3 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h3><p>1、新建仓库 <code>xxx.github.io</code><br>2、配置ssh 链接方式 &lt;账号密码方式会报错&gt;<br>3、测试是否成功命令==&gt; <code>$ ssh -T git@github.com # 注意邮箱地址不用改</code></p>
+<span id="more"></span>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><p>4、安装Hexo<br><code>$ npm install -g hexo-cli</code></p>
+<ul>
+<li>进行初始化 <code>$ hexo init blog  # 创建工程名，随意命名</code></li>
+<li>进入文件夹 <code>$ cd blog</code></li>
+<li>安装所需模块 <code>$ npm install # 安装 node 所需模块</code></li>
+</ul>
+<p>5、克隆自己喜欢的hexo博客主题<br><code>$ git clone https://github.com/theme-next/hexo-theme-next.git themes/next</code></p>
+<blockquote>
+<p>需要在 _config.yml 指定 Heox 主题</p>
+</blockquote>
+<blockquote>
+<p><code> hexo d</code> 直接部署之前需要安装插件<br><code>npm install hexo-deployer-git --save</code></p>
+</blockquote>
+<h2 id="常用Hexo命令"><a href="#常用Hexo命令" class="headerlink" title="常用Hexo命令"></a>常用Hexo命令</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&#x27;ctrl + c&#x27;关闭server）</span><br><span class="line">hexo deploy #将.deploy目录部署到GitHubhexo help  # 查看帮助hexo version  #查看Hexo的版本</span><br></pre></td></tr></table></figure>
+<h4 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a>缩写</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>
+<h4 id="复合命令"><a href="#复合命令" class="headerlink" title="复合命令"></a>复合命令</h4><p><code>hexo deploy -g  #生成加部署</code><br><code>hexo server -g  #生成加预览</code></p>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+      <tags>
+        <tag>tag1</tag>
+      </tags>
+  </entry>
+</search>
