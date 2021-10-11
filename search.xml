@@ -18,8 +18,29 @@
 <blockquote>
 <p><code> hexo d</code> 直接部署之前需要安装插件<br><code>npm install hexo-deployer-git --save</code></p>
 </blockquote>
-<h2 id="常用Hexo命令"><a href="#常用Hexo命令" class="headerlink" title="常用Hexo命令"></a>常用Hexo命令</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&#x27;ctrl + c&#x27;关闭server）</span><br><span class="line">hexo deploy #将.deploy目录部署到GitHubhexo help  # 查看帮助hexo version  #查看Hexo的版本</span><br></pre></td></tr></table></figure>
-<h4 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a>缩写</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo n == hexo new</span><br><span class="line">hexo g == hexo generate</span><br><span class="line">hexo s == hexo server</span><br><span class="line">hexo d == hexo deploy</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>文章字数统计插件 安装 hexo-wordcount插件<br>npm i –save hexo-wordcount</p>
+</blockquote>
+<p>然后只需在本主题下的 _config.yml 文件中，激活以下配置项即可：</p>
+<pre><code>postInfo:
+  date: true # 发布日期
+  update: true # 更新日期
+  wordCount: true # 文章字数统计
+  totalCount: true # 站点总文章字数
+  min2read: true # 文章阅读时长
+  readCount: true # 文章阅读次数
+</code></pre>
+<h2 id="常用Hexo命令"><a href="#常用Hexo命令" class="headerlink" title="常用Hexo命令"></a>常用Hexo命令</h2><pre><code>hexo new "postName" #新建文章
+hexo new page "pageName" #新建页面
+hexo generate #生成静态页面至public目录
+hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）
+hexo deploy #将.deploy目录部署到GitHubhexo help  # 查看帮助hexo version  #查看Hexo的版本
+</code></pre>
+<h4 id="缩写"><a href="#缩写" class="headerlink" title="缩写"></a>缩写</h4><pre><code>hexo n == hexo new
+hexo g == hexo generate
+hexo s == hexo server
+hexo d == hexo deploy
+</code></pre>
 <h4 id="复合命令"><a href="#复合命令" class="headerlink" title="复合命令"></a>复合命令</h4><p><code>hexo deploy -g  #生成加部署</code><br><code>hexo server -g  #生成加预览</code></p>
 ]]></content>
       <categories>
