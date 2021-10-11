@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>hexo 下的分类和表签无法显示，怎么解决？</title>
+    <url>/202110081.html</url>
+    <content><![CDATA[<h2 id="步骤一"><a href="#步骤一" class="headerlink" title="步骤一"></a>步骤一</h2><p>新建一个页面，命名为 tags 。命令如下：</p>
+<blockquote>
+<p>$ hexo new page “tags”</p>
+</blockquote>
+<hr>
+<span id="more"></span>
+<h2 id="步骤二"><a href="#步骤二" class="headerlink" title="步骤二"></a>步骤二</h2><p>编辑刚新建的页面，将页面的类型设置为 tags ，主题将自动为这个页面显示标签云。页面内容如下：</p>
+<blockquote>
+<p>title: Tagcloud<br>date: 2014-12-22 12:39:04<br>type: “tags”</p>
+</blockquote>
+<hr>
+<h2 id="步骤三"><a href="#步骤三" class="headerlink" title="步骤三"></a>步骤三</h2><p>在菜单中添加链接。编辑 主题配置文件 ，添加 tags 到 menu 中，如下:</p>
+<blockquote>
+<p>menu:<br>  home: /<br>  archives: /archives<br>  tags: /tags</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>默认分类</category>
+      </categories>
+      <tags>
+        <tag>博客</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>first-blog</title>
     <url>/202110061.html</url>
     <content><![CDATA[<h3 id="步骤："><a href="#步骤：" class="headerlink" title="步骤："></a>步骤：</h3><p>1、新建仓库 <code>xxx.github.io</code><br>2、配置ssh 链接方式 &lt;账号密码方式会报错&gt;<br>3、测试是否成功命令==&gt; <code>$ ssh -T git@github.com # 注意邮箱地址不用改</code></p>
@@ -48,32 +74,6 @@ hexo d == hexo deploy
       </categories>
       <tags>
         <tag>博客相关</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hexo 下的分类和表签无法显示，怎么解决？</title>
-    <url>/202110081.html</url>
-    <content><![CDATA[<h2 id="步骤一"><a href="#步骤一" class="headerlink" title="步骤一"></a>步骤一</h2><p>新建一个页面，命名为 tags 。命令如下：</p>
-<blockquote>
-<p>$ hexo new page “tags”</p>
-</blockquote>
-<hr>
-<span id="more"></span>
-<h2 id="步骤二"><a href="#步骤二" class="headerlink" title="步骤二"></a>步骤二</h2><p>编辑刚新建的页面，将页面的类型设置为 tags ，主题将自动为这个页面显示标签云。页面内容如下：</p>
-<blockquote>
-<p>title: Tagcloud<br>date: 2014-12-22 12:39:04<br>type: “tags”</p>
-</blockquote>
-<hr>
-<h2 id="步骤三"><a href="#步骤三" class="headerlink" title="步骤三"></a>步骤三</h2><p>在菜单中添加链接。编辑 主题配置文件 ，添加 tags 到 menu 中，如下:</p>
-<blockquote>
-<p>menu:<br>  home: /<br>  archives: /archives<br>  tags: /tags</p>
-</blockquote>
-]]></content>
-      <categories>
-        <category>默认分类</category>
-      </categories>
-      <tags>
-        <tag>博客</tag>
       </tags>
   </entry>
 </search>
